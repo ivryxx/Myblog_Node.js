@@ -14,8 +14,8 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="mb-4">Blog Articles</h1>
-      <a href="/articles/new" class="btn btn-success">New Article</a>
+      <h1 class="mb-4">🛸My Personal Blog🦄</h1>
+      <a href="/articles/new" class="btn btn-success">New✏</a>
 
       <% articles.forEach(article => { %>
       <div class="card mt-4">
@@ -25,11 +25,11 @@
             <%= article.createdAt.toLocaleDateString() %>
           </div>
           <div class="card-text mb-2"><%= article.description %></div>
-          <a href="articles/<%= article.slug %>" class="btn btn-primary">Read More</a>
-           <a href="articles/edit/<%= article.id %>" class="btn btn-info">Edit</a>
+          <a href="articles/<%= article.slug %>" class="btn btn-primary">Show🔎</a>
+           <!-- <a href="articles/edit/<%= article.id %>" class="btn btn-info">Edit</a> -->
           <form action="/articles/<%= article.id %>?_method=DELETE"
             method="POST" class="d-inline">
-          <button type="submit" class="btn btn-danger">Delete</button></form>
+          <button type="submit" class="btn btn-danger">Delete🗑</button></form>
         </div>
       </div>
       <% }) %>
