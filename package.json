@@ -18,9 +18,16 @@
   },
   "homepage": "https://github.com/ivryxx/Myblog_Node.js#readme",
   "dependencies": {
+    "dompurify": "^2.3.6",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
-    "mongoose": "^6.2.7"
+    "jsdom": "^19.0.0",
+    "marked": "^4.0.12",
+    "method": "^2.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.2.7",
+    "override": "^0.0.1",
+    "slugify": "^1.6.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
