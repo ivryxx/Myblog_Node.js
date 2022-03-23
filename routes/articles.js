@@ -26,7 +26,7 @@ router.post(
   saveArticleAndRedirect("new")
 );
 
-router.put(
+router.post(
   "/:id",
   async (req, res, next) => {
     req.article = await Article.findById(req.params.id);
