@@ -25,6 +25,7 @@
     "marked": "^4.0.12",
     "method": "^2.0.0",
     "method-override": "^3.0.0",
+    "mongodb": "^4.4.1",
     "mongoose": "^6.2.7",
     "override": "^0.0.1",
     "slugify": "^1.6.5"

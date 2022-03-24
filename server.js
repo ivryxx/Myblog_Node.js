@@ -5,7 +5,24 @@ const articleRouter = require("./routes/articles");
 const methodOverride = require("method-override");
 const app = express();
 
-mongoose.connect("mongodb://localhost/blog", {
+const mongodb = require("mongodb");
+const MongoClient = mongodb.MongoClient;
+const url = `mongodb+srv://test:sparta@cluster0.eaoas.mongodb.net/Cluster0?retryWrites=true&w=majority
+`;
+
+MongoClient.connect(url)
+  .then((client) => {
+    console.log("mongo connected");
+    console.log(client);
+  })
+  .then(
+    app.listen(4000, () => {
+      console.log("4000 port on");
+    })
+  )
+  .catch((err) => console.log(err));
+
+mongoose.connect("mongodb://localhost/blog?authSource=admin", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   // useCreateIndex: true,
