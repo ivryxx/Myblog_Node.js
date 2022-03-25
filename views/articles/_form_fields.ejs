@@ -7,11 +7,17 @@
     name="title"
     id="title"
     class="form-control"
+    placeholder="Title"
   />
 </div>
 <div class="form-group">
   <label for="description">Name</label>
-  <textarea name="description" id="description" class="form-control">
+  <textarea
+    name="description"
+    id="description"
+    class="form-control"
+    placeholder="Your name"
+  >
 <%= article.description %></textarea
   >
 </div>
@@ -23,6 +29,13 @@
     id="markdown"
     class="form-control"
     style="height: 300px"
+    placeholder="Write the contents here!
+
+<Markdown Syntax Guide>
+H1 : # text  | H2 : ## text  | H3 : ### text
+Bold : **text  | Italicize : *text*  | Strikethrough : ~text~
+Bullets : * text  | Numbered : 1. text  | Checkbox : [] text
+Code block : ```  | Blockquote : > text  | Inline Code : `text`  | Divider : ---"
   >
 <% article.markdown %></textarea
   >
@@ -35,6 +48,7 @@
     name="Password"
     id="Password"
     class="form-control"
+    placeholder="Password"
   />
 </div>
 
